@@ -1,8 +1,0 @@
-@keyframes border-spin {
-  0% { border-image-source: linear-gradient(90deg, #a855f7, #38bdf8, #f472b6); }
-  100% { border-image-source: linear-gradient(450deg, #a855f7, #38bdf8, #f472b6); }
-}
-.animate-border-spin {
-  animation: border-spin 4s linear infinite;
-  border-radius: 1rem !important;
-}

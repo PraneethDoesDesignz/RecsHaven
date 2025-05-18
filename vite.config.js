@@ -12,7 +12,10 @@ export default defineConfig({
   server: {
     port: 5173,
     open: true,
-    hot: true
+    hot: true,
+    allowedHosts: [
+      '9bba-2401-4900-1cb5-3cc0-7969-9ccc-f71a-19db.ngrok-free.app'
+    ]
   },
   build: {
     outDir: './dist',
