@@ -41,7 +41,7 @@ const DockIconButton = React.forwardRef<HTMLButtonElement, DockIconButtonProps>(
           whileTap={{ scale: 0.95 }}
           onClick={onClick}
           className={cn(
-            "p-2 rounded-lg hover:bg-secondary transition-colors",
+            "p-2 rounded-lg hover:bg-white transition-colors",
             className
           )}
         >
@@ -49,7 +49,7 @@ const DockIconButton = React.forwardRef<HTMLButtonElement, DockIconButtonProps>(
         </motion.button>
 
         {/* Floating label on hover */}
-        <span className="absolute top-full mt-2 text-xs text-foreground bg-background px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+        <span className="absolute top-full mt-2 text-xs text-black- bg-background px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
 
           {label}
         </span>
@@ -73,7 +73,7 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
             className={cn(
               "flex items-center gap-1 p-1 rounded-2xl",
               "backdrop-blur-lg border shadow-lg",
-              "bg-background/90 border-border",
+              "bg-white border-border",
               "hover:shadow-xl transition-shadow duration-300"
             )}
           >

@@ -2,12 +2,7 @@ import React from 'react';
 import HeroSection from './HeroSection';
 import CategoryCarousel from './CategoryCarousel';
 import RecommendationCard from './RecommendationCard';
-
-const mockItems = Array.from({ length: 9 }, (_, i) => ({ id: i + 1, title: `Favorite ${i + 1}` }));
-const mockBooks = Array.from({ length: 15 }, (_, i) => ({ id: i + 1, title: `Book ${i + 1}` }));
-const mockMovies = Array.from({ length: 9 }, (_, i) => ({ id: i + 1, title: `Movie ${i + 1}` }));
-const mockRestaurants = Array.from({ length: 9 }, (_, i) => ({ id: i + 1, title: `Restaurant ${i + 1}` }));
-const mockTravelSpots = Array.from({ length: 9 }, (_, i) => ({ id: i + 1, title: `Travel Spot ${i + 1}` }));
+import detailsData from '../detailsData.json';
 
 const HomeScreen = () => (
   <div className="w-full">
@@ -15,35 +10,24 @@ const HomeScreen = () => (
       <HeroSection />
     </div>
     <div className="px-8">
-      <h2 className="text-2xl font-semibold mb-4">Here Are Our Favorites</h2>
-      <CategoryCarousel title="Favorites">
-        {mockItems.map((item) => (
-          <RecommendationCard key={item.id} id={item.id} type="favorite" title={item.title} />
-        ))}
-      </CategoryCarousel>
-      <CategoryCarousel title="Recommended By Others">
-        {mockItems.map((item) => (
-          <RecommendationCard key={item.id} id={item.id} type="favorite" title={item.title} />
-        ))}
-      </CategoryCarousel>
       <CategoryCarousel title="Books Recommended By Others">
-        {mockBooks.map((book) => (
-          <RecommendationCard key={book.id} id={book.id} type="book" title={book.title} />
+        {detailsData.books.filter(book => book.image && book.rating).map((book) => (
+          <RecommendationCard key={book.id} id={book.id} type="books" title={book.title} image={book.image} rating={book.rating} author={book.author} />
         ))}
       </CategoryCarousel>
       <CategoryCarousel title="Restaurants Recommended By Others">
-        {mockRestaurants.map((restaurant) => (
-          <RecommendationCard key={restaurant.id} id={restaurant.id} type="restaurant" title={restaurant.title} />
+        {detailsData.restaurants.filter(rest => rest.image && rest.rating).map((restaurant) => (
+          <RecommendationCard key={restaurant.id} id={restaurant.id} type="restaurants" title={restaurant.title} image={restaurant.image} rating={restaurant.rating} author={restaurant.location} />
         ))}
       </CategoryCarousel>
       <CategoryCarousel title="Movies Recommended By Others">
-        {mockMovies.map((movie) => (
-          <RecommendationCard key={movie.id} id={movie.id} type="movie" title={movie.title} />
+        {detailsData.movies.filter(movie => movie.image && movie.rating).map((movie) => (
+          <RecommendationCard key={movie.id} id={movie.id} type="movies" title={movie.title} image={movie.image} rating={movie.rating} author={movie.director} />
         ))}
       </CategoryCarousel>
       <CategoryCarousel title="Travel Spots Recommended By Others">
-        {mockTravelSpots.map((spot) => (
-          <RecommendationCard key={spot.id} id={spot.id} type="travel" title={spot.title} />
+        {detailsData.travels.filter(spot => spot.image && spot.rating).map((spot) => (
+          <RecommendationCard key={spot.id} id={spot.id} type="travels" title={spot.title} image={spot.image} rating={spot.rating} author={spot.approxExpenditure} />
         ))}
       </CategoryCarousel>
     </div>

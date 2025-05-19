@@ -1,9 +1,13 @@
 import React from 'react';
 
 const HeroSection = () => (
-  <section className="w-full bg-gray-300 rounded-2xl p-10 my-6 min-h-[350px] flex items-center justify-center shadow-lg">
-    <div className="text-2xl text-black font-semibold">Hero Section Placeholder</div>
+  <section className="w-full bg-gray-300 mb-32 rounded-2xl p-0 my-6 min-h-[500px] relative overflow-hidden shadow-lg">
+    <img
+      src="/images/hero.png"
+      alt="Hero"
+      className="absolute inset-0 w-full h-full object-cover"
+    />
   </section>
 );
 
-export default HeroSection; 
+export default HeroSection;

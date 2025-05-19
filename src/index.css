@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400..700&display=swap');
+
+body {
+  font-family: 'Archivo Narrow', sans-serif;
+  letter-spacing: 0.03em;
+  background: #fcf3f7 !important;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,4 +18,21 @@
 .hide-scrollbar {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;     /* Firefox */
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 90s linear infinite;
+}
+
+.fade-blur-left {
+  background: linear-gradient(to right, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 100%);
+}
+.fade-blur-right {
+  background: linear-gradient(to left, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 100%);
 } 

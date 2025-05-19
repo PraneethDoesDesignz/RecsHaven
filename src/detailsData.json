@@ -1,0 +1,638 @@
+{
+  "books": [
+    {
+      "id": "book1",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "description": "A classic novel by F. Scott Fitzgerald about the mysterious Jay Gatsby and the roaring twenties.",
+      "image": "./images/gatsby.webp",
+      "rating": 5,
+      "genre": ["Classic", "Fiction", "Drama"],
+      "likes": 124,
+      "recommendedBy": ["Alice", "Bob", "Charlie"],
+      "reviews": [
+        { "user": "Alice", "comment": "A masterpiece!" },
+        { "user": "Bob", "comment": "Timeless and beautiful." },
+        { "user": "Charlie", "comment": "A classic that never gets old." },
+        { "user": "Daisy", "comment": "Loved the writing style." },
+        { "user": "Eve", "comment": "A must-read for everyone." }
+      ]
+    },
+    {
+      "id": "book2",
+      "title": "1984",
+      "author": "George Orwell",
+      "description": "A dystopian novel by George Orwell that explores the dangers of totalitarianism.",
+      "image": "./images/1984.jpg",
+      "rating": 4.5,
+      "genre": ["Dystopian", "Science Fiction", "Political"],
+      "likes": 98,
+      "recommendedBy": ["Dana", "Frank"],
+      "reviews": [
+        { "user": "Charlie", "comment": "Chilling and relevant." },
+        { "user": "Dana", "comment": "A must-read for everyone." },
+        { "user": "Frank", "comment": "Still resonates today." }
+      ]
+    },
+    {
+      "id": "book3",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "description": "Harper Lee's classic about justice and racial inequality in the Deep South.",
+      "image": "./images/tkm.webp",
+      "rating": 5,
+      "genre": ["Classic", "Fiction", "Social Issues"],
+      "likes": 110,
+      "recommendedBy": ["Eve", "Grace", "Jack"],
+      "reviews": [
+        { "user": "Eve", "comment": "Powerful and moving." },
+        { "user": "Frank", "comment": "A story that stays with you." },
+        { "user": "Grace", "comment": "A timeless message." },
+        { "user": "Hank", "comment": "Beautifully written." },
+        { "user": "Ivy", "comment": "A must for every bookshelf." },
+        { "user": "Jack", "comment": "Deeply impactful." }
+      ]
+    },
+    {
+      "id": "book4",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "description": "Jane Austen's beloved romantic novel set in 19th-century England.",
+      "image": "./images/pnp.webp",
+      "rating": 4.8,
+      "genre": ["Classic", "Romance"],
+      "likes": 87,
+      "recommendedBy": ["Jane", "Ivy"],
+      "reviews": [
+        { "user": "Grace", "comment": "Witty and charming." },
+        { "user": "Hank", "comment": "A delightful read." },
+        { "user": "Ivy", "comment": "Loved the characters." },
+        { "user": "Jane", "comment": "A true classic." }
+      ]
+    },
+    {
+      "id": "book5",
+      "title": "Moby Dick",
+      "author": "Herman Melville",
+      "description": "Herman Melville's epic tale of obsession and revenge on the high seas.",
+      "image": "./images/moby.jpg",
+      "rating": 4,
+      "genre": ["Adventure", "Classic"],
+      "likes": 65,
+      "recommendedBy": ["Kim", "Jack"],
+      "reviews": [
+        { "user": "Ivy", "comment": "A challenging but rewarding read." },
+        { "user": "Jack", "comment": "Epic and thought-provoking." },
+        { "user": "Kim", "comment": "A bit long but worth it." }
+      ]
+    },
+    {
+      "id": "book6",
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "description": "J.D. Salinger's story of teenage angst and alienation.",
+      "image": "./images/catcher.jpg",
+      "rating": 4.2,
+      "genre": ["Realism", "Fiction", "Drama"],
+      "likes": 30,
+      "recommendedBy": ["Kim", "Leo"],
+      "reviews": [
+        { "user": "Kim", "comment": "Relatable and raw." },
+        { "user": "Leo", "comment": "A voice for a generation." }
+      ]
+    },
+    {
+      "id": "book7",
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "description": "J.R.R. Tolkien's fantasy adventure that precedes The Lord of the Rings.",
+      "image": "./images/hobbit.jpg",
+      "rating": 5,
+      "genre": ["Fantasy", "Adventure", "Children's"],
+      "likes": 890,
+      "recommendedBy": ["Mona", "Ned"],
+      "reviews": [
+        { "user": "Mona", "comment": "Magical and fun." },
+        { "user": "Ned", "comment": "A great adventure." }
+      ]
+    },
+    {
+      "id": "book8",
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "description": "Aldous Huxley's vision of a dystopian future shaped by technology and control.",
+      "image": "./images/bnw.jpg",
+      "rating": 4.3,
+      "genre": ["Dystopian", "Science Fiction", "Political"],
+      "likes": 298,
+      "recommendedBy": ["Olive", "Paul"],
+      "reviews": [
+        { "user": "Olive", "comment": "Disturbing and fascinating." },
+        { "user": "Paul", "comment": "Still relevant today." }
+      ]
+    },
+    {
+      "id": "book9",
+      "title": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "description": "J.R.R. Tolkien's epic fantasy trilogy about the quest to destroy the One Ring.",
+      "image": "./images/lor.jpg",
+      "rating": 5,
+      "genre": ["Fantasy", "Adventure", "Children's"],
+      "likes": 451,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Quinn", "comment": "The best fantasy ever." },
+        { "user": "Rita", "comment": "A world like no other." }
+      ]
+    },
+    {
+      "id": "book10",
+      "title": "Jane Eyre",
+      "author": "Charlotte Brontë",
+      "description": "Charlotte Brontë's classic novel of love, independence, and resilience.",
+      "image": "./images/jane.jpg",
+      "rating": 4.7,
+      "genre": ["Romance", "Drama", "Classic"],
+      "likes": 300,
+      "recommendedBy": ["Sam", "Tina"],
+      "reviews": [
+        { "user": "Sam", "comment": "Inspiring and emotional." },
+        { "user": "Tina", "comment": "A strong heroine." }
+      ]
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "rest1",
+      "title": "Pasta Palace",
+      "location": "Rome, Italy",
+      "description": "Best pasta in town with a cozy Italian atmosphere.",
+      "image": "./images/pp.png",
+      "rating": 4.5,
+      "cuisine": ["Italian", "Pasta", "Dessert"],
+      "likes": 451,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "ChefTom", "comment": "Delicious and authentic!" },
+        { "user": "Anna", "comment": "Love the carbonara." },
+        { "user": "Mario", "comment": "Feels like Italy!" },
+        { "user": "Sophia", "comment": "Great service and food." },
+        { "user": "Luca", "comment": "My favorite spot." }
+      ]
+    },
+    {
+      "id": "rest2",
+      "title": "Sushi World",
+      "location": "Tokyo, Japan",
+      "description": "Fresh sushi and sashimi prepared by master chefs.",
+      "image": "./images/sushi.png",
+      "rating": 4.8,
+      "cuisine": ["Japanese", "Sushi", "Asian"],
+      "likes": 451,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Ben", "comment": "Best sushi in the city!" },
+        { "user": "Cathy", "comment": "So fresh and tasty." },
+        { "user": "Kenji", "comment": "Authentic flavors." }
+      ]
+    },
+    {
+      "id": "rest3",
+      "title": "Burger Barn",
+      "location": "New York, USA",
+      "description": "Juicy burgers and crispy fries in a fun, retro setting.",
+      "image": "./images/bb.png",
+      "rating": 4.2,
+      "cuisine": ["American", "Burgers", "Fast Food"],
+      "likes": 451,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Dan", "comment": "Burgers are huge!" },
+        { "user": "Ella", "comment": "Love the milkshakes." },
+        { "user": "Sam", "comment": "Great fries." },
+        { "user": "Tina", "comment": "Fun atmosphere." }
+      ]
+    },
+    {
+      "id": "rest4",
+      "title": "Taco Town",
+      "location": "Mexico City, Mexico",
+      "description": "Authentic Mexican tacos and street food.",
+      "image": "./images/taco.png",
+      "rating": 4.6,
+      "cuisine": ["Mexican", "Tacos", "Street Food"],
+      "likes": 451,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Frank", "comment": "Tacos are amazing!" },
+        { "user": "Gina", "comment": "Great flavors." },
+        { "user": "Luis", "comment": "Best salsa ever." },
+        { "user": "Maria", "comment": "Authentic taste." },
+        { "user": "Carlos", "comment": "Quick service." },
+        { "user": "Sofia", "comment": "Love the vibe!" }
+      ]
+    },
+    {
+      "id": "rest5",
+      "title": "Curry Corner",
+      "location": "Bangalore, India",
+      "description": "Spicy Indian curries and naan bread.",
+      "image": "./images/cc.png",
+      "rating": 4.4,
+      "cuisine": ["Indian", "Curry", "Spicy"],
+      "likes": 451,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Hari", "comment": "Best butter chicken!" },
+        { "user": "Isha", "comment": "Love the spices." }
+      ]
+    },
+    {
+      "id": "rest6",
+      "title": "Pizza Plaza",
+      "location": "Naples, Italy",
+      "description": "Wood-fired pizzas with fresh toppings.",
+      "image": "./images/pizza.png",
+      "rating": 4.7,
+      "cuisine": ["Italian", "Pizza"],
+      "likes": 451,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Jake", "comment": "Crust is perfect." },
+        { "user": "Kara", "comment": "So cheesy!" }
+      ]
+    },
+    {
+      "id": "rest7",
+      "title": "Vegan Vibes",
+      "location": "Berlin, Germany",
+      "description": "Plant-based dishes that even meat lovers enjoy.",
+      "image": "./images/vv.png",
+      "rating": 4.3,
+      "cuisine": ["Vegan", "Plant-Based", "Healthy"],
+      "likes": 451,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Liam", "comment": "Healthy and tasty." },
+        { "user": "Maya", "comment": "Great vegan options." }
+      ]
+    },
+    {
+      "id": "rest8",
+      "title": "Steakhouse Supreme",
+      "location": "New York, USA",
+      "description": "Premium steaks grilled to perfection.",
+      "image": "./images/ss.png",
+      "rating": 4.9,
+      "cuisine": ["Steak", "Grilled", "Premium"],
+      "likes": 451,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Nina", "comment": "Steaks are juicy!" },
+        { "user": "Oscar", "comment": "Best in town." }
+      ]
+    },
+    {
+      "id": "rest9",
+      "title": "Seafood Shack",
+      "location": "Sydney, Australia",
+      "description": "Fresh seafood and ocean views.",
+      "image": "./images/seafood.png",
+      "rating": 4.5,
+      "cuisine": ["Seafood", "Ocean View", "Fresh"],
+      "likes": 451,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Pam", "comment": "Love the shrimp!" },
+        { "user": "Quincy", "comment": "Great fish tacos." }
+      ]
+    },
+    {
+      "id": "rest10",
+      "title": "Dessert Dreams",
+      "location": "Paris, France",
+      "description": "Cakes, pastries, and sweet treats for every craving.",
+      "image": "./images/dd.png",
+      "rating": 4.8,
+      "cuisine": ["Dessert", "Cakes", "Pastries"],
+      "likes": 451,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Rita", "comment": "Cakes are heavenly!" },
+        { "user": "Sam", "comment": "Love the variety." }
+      ]
+    }
+  ],
+  "movies": [
+    {
+      "id": "movie1",
+      "title": "Inception",
+      "director": "Christopher Nolan",
+      "description": "A mind-bending thriller by Christopher Nolan.",
+      "image": "./images/inception.webp",
+      "rating": 4.8,
+      "reviews": [
+        { "user": "Tom", "comment": "Amazing visuals!" },
+        { "user": "Uma", "comment": "Keeps you guessing." },
+        { "user": "Rick", "comment": "Mind-blowing plot." },
+        { "user": "Sara", "comment": "Great soundtrack." }
+      ]
+    },
+    {
+      "id": "movie2",
+      "title": "The Shawshank Redemption",
+      "director": "Frank Darabont",
+      "description": "A story of hope and friendship inside a prison.",
+      "image": "./images/shawshank.jpg",
+      "rating": 5,
+      "genre": ["Drama", "Crime", "Thriller"],
+      "likes": 451,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Vera", "comment": "Inspiring and moving." },
+        { "user": "Will", "comment": "Best movie ever." },
+        { "user": "Andy", "comment": "A masterpiece." },
+        { "user": "Red", "comment": "Hope is a good thing." },
+        { "user": "Brooks", "comment": "Unforgettable." }
+      ]
+    },
+    {
+      "id": "movie3",
+      "title": "The Godfather",
+      "director": "Francis Ford Coppola",
+      "description": "The classic mafia drama directed by Francis Ford Coppola.",
+      "image": "./images/godfather.jpg",
+      "rating": 5,
+      "genre": ["Drama", "Crime", "Thriller"],
+      "likes": 451,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Xena", "comment": "A cinematic masterpiece." },
+        { "user": "Yuri", "comment": "Unforgettable performances." }
+      ]
+    },
+    {
+      "id": "movie4",
+      "title": "Pulp Fiction",
+      "director": "Quentin Tarantino",
+      "description": "Quentin Tarantino's iconic crime film.",
+      "image": "./images/pf.jpg",
+      "rating": 4.7,
+      "genre": ["Crime", "Drama", "Thriller"],
+      "likes": 451,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Zane", "comment": "Wild and entertaining." },
+        { "user": "Amy", "comment": "Great dialogue." }
+      ]
+    },
+    {
+      "id": "movie5",
+      "title": "Forrest Gump",
+      "director": "Robert Zemeckis",
+      "description": "The life journey of Forrest Gump, a man with a kind heart.",
+      "image": "./images/fg.jpg",
+      "rating": 4.9,
+      "genre": ["Drama", "Comedy", "Romance"],
+      "likes": 451,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Ben", "comment": "Heartwarming story." },
+        { "user": "Cara", "comment": "So emotional." }
+      ]
+    },
+    {
+      "id": "movie6",
+      "title": "The Matrix",
+      "director": "The Wachowskis",
+      "description": "A sci-fi classic that questions reality.",
+      "image": "./images/matrix.jpg",
+      "rating": 4.6,
+      "genre": ["Sci-Fi", "Action", "Thriller"],
+      "likes": 451,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Derek", "comment": "Mind-blowing!" },
+        { "user": "Ella", "comment": "Action-packed." }
+      ]
+    },
+    {
+      "id": "movie7",
+      "title": "The Dark Knight",
+      "director": "Christopher Nolan",
+      "description": "Batman faces the Joker in this thrilling sequel.",
+      "image": "./images/dark.jpg",
+      "rating": 4.9,
+      "genre": ["Action", "Crime", "Drama"],
+      "likes": 451,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Finn", "comment": "Heath Ledger is legendary." },
+        { "user": "Gina", "comment": "Best superhero movie." }
+      ]
+    },
+    {
+      "id": "movie8",
+      "title": "Fight Club",
+      "director": "David Fincher",
+      "description": "A cult classic about identity and rebellion.",
+      "image": "./images/fc.jpg",
+      "rating": 4.5,
+      "genre": ["Drama", "Comedy", "Thriller"],
+      "likes": 451,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Hank", "comment": "Thought-provoking." },
+        { "user": "Ivy", "comment": "Unique storytelling." }
+      ]
+    },
+    {
+      "id": "movie9",
+      "title": "Interstellar",
+      "director": "Christopher Nolan",
+      "description": "A journey through space and time to save humanity.",
+      "image": "./images/interstellar.jpg",
+      "rating": 4.8,
+      "genre": ["Adventure", "Drama", "Sci-Fi"],
+      "likes": 451,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Jack", "comment": "Visually stunning." },
+        { "user": "Kara", "comment": "Emotional and epic." }
+      ]
+    },
+    {
+      "id": "movie10",
+      "title": "The Lion King",
+      "director": "Roger Allers and Rob Minkoff",
+      "description": "Disney's animated classic about the circle of life.",
+      "image": "./images/lk.jpg",
+      "rating": 4.7,
+      "genre": ["Adventure", "Animation", "Family"],
+      "likes": 451,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Leo", "comment": "Great for all ages." },
+        { "user": "Mona", "comment": "Beautiful animation." }
+      ]
+    }
+  ],
+  "travels": [
+    {
+      "id": "travel1",
+      "title": "Bali",
+      "approxExpenditure": "$1500",
+      "description": "A tropical paradise with beautiful beaches and vibrant culture.",
+      "image": "./images/bali.jpg",
+      "rating": 5,
+      "genre": ["Adventure", "Beaches", "Culture"],
+      "likes": 200,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Nina", "comment": "Unforgettable experience." },
+        { "user": "Oscar", "comment": "Loved the beaches." },
+        { "user": "Liam", "comment": "Great food and people." },
+        { "user": "Sophie", "comment": "Would visit again!" }
+      ]
+    },
+    {
+      "id": "travel2",
+      "title": "Paris",
+      "approxExpenditure": "$2000",
+      "description": "The city of lights, romance, and art.",
+      "image": "./images/paris.jpg",
+      "rating": 4.9,
+      "genre": ["Romance", "Art", "Culture"],
+      "likes": 251,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Pam", "comment": "So romantic!" },
+        { "user": "Quincy", "comment": "Amazing food." },
+        { "user": "Marie", "comment": "Loved the museums." },
+        { "user": "Jean", "comment": "Beautiful city." },
+        { "user": "Luc", "comment": "Great shopping." }
+      ]
+    },
+    {
+      "id": "travel3",
+      "title": "New York",
+      "approxExpenditure": "$1800",
+      "description": "The city that never sleeps, full of energy and sights.",
+      "image": "./images/ny.jpg",
+      "rating": 4.8,
+      "genre": ["City", "Sights", "Energy"],
+      "likes": 500,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Rita", "comment": "So much to do!" },
+        { "user": "Sam", "comment": "Loved Central Park." }
+      ]
+    },
+    {
+      "id": "travel4",
+      "title": "Tokyo",
+      "approxExpenditure": "$1600",
+      "description": "A blend of tradition and technology in Japan's capital.",
+      "image": "./images/tokyo.jpg",
+      "rating": 4.7,
+      "genre": ["City", "Sights", "Energy"],
+      "likes": 345,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Tom", "comment": "Fascinating city." },
+        { "user": "Uma", "comment": "Great food and culture." }
+      ]
+    },
+    {
+      "id": "travel5",
+      "title": "Sydney",
+      "approxExpenditure": "$1500",
+      "description": "Australia's harbor city with iconic landmarks.",
+      "image": "./images/sydney.jpg",
+      "rating": 4.6,
+      "genre": ["City", "Sights", "Energy"],
+      "likes": 187,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Vera", "comment": "Loved the Opera House." },
+        { "user": "Will", "comment": "Great beaches." }
+      ]
+    },
+    {
+      "id": "travel6",
+      "title": "Rome",
+      "approxExpenditure": "$1200",
+      "description": "Ancient history and delicious cuisine in Italy's capital.",
+      "image": "./images/rome.jpg",
+      "rating": 4.8,
+      "genre": ["City", "Sights", "Energy"],
+      "likes": 890,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Xena", "comment": "So much history." },
+        { "user": "Yuri", "comment": "Loved the food." }
+      ]
+    },
+    {
+      "id": "travel7",
+      "title": "Cape Town",
+      "approxExpenditure": "$1000",
+      "description": "Stunning landscapes and vibrant culture in South Africa.",
+      "image": "./images/cape.jpg",
+      "rating": 4.7,
+      "genre": ["City", "Sights", "Energy"],
+      "likes": 123,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Zane", "comment": "Beautiful scenery." },
+        { "user": "Amy", "comment": "Great wine country." }
+      ]
+    },
+    {
+      "id": "travel8",
+      "title": "Rio de Janeiro",
+      "approxExpenditure": "$1200",
+      "description": "Famous for its beaches, carnival, and Christ the Redeemer.",
+      "image": "./images/rio.jpg",
+      "rating": 4.6,
+      "genre": ["City", "Sights", "Energy"],
+      "likes": 100,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Ben", "comment": "Loved the vibe." },
+        { "user": "Cara", "comment": "Amazing views." }
+      ]
+    },
+    {
+      "id": "travel9",
+      "title": "London",
+      "approxExpenditure": "$1500",
+      "description": "A city rich in history, culture, and modern attractions.",
+      "image": "./images/london.jpg",
+      "rating": 4.8,
+      "genre": ["City", "Sights", "Energy"],
+      "likes": 682,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Derek", "comment": "So much to see." },
+        { "user": "Ella", "comment": "Loved the museums." }
+      ]
+    },
+    {
+      "id": "travel10",
+      "title": "Santorini",
+      "approxExpenditure": "$1300",
+      "description": "A Greek island known for its stunning sunsets and whitewashed buildings.",
+      "image": "./images/santorini.jpg",
+      "rating": 4.9,
+      "genre": ["City", "Sights", "Energy"],
+      "likes": 995,
+      "recommendedBy": ["Quinn", "Rita"],
+      "reviews": [
+        { "user": "Finn", "comment": "Most beautiful sunsets." },
+        { "user": "Gina", "comment": "Charming and relaxing." }
+      ]
+    }
+  ]
+} 
