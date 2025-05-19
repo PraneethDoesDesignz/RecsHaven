@@ -84,7 +84,7 @@ const WishlistScreen = () => {
   }, []);
 
   return (
-    <>
+    <div className="flex flex-col min-h-screen bg-pink-50 px-4 md:px-8">
       <h2 className="text-2xl font-semibold mb-4">Your Wishlist</h2>
       <CategoryCarousel title="Books in Wishlist">
         {wishlistBooks.length === 0 ? (
@@ -122,7 +122,7 @@ const WishlistScreen = () => {
           ))
         )}
       </CategoryCarousel>
-    </>
+    </div>
   );
 };
 

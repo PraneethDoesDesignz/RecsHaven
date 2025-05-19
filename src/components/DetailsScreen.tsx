@@ -158,7 +158,7 @@ const DetailsScreen = () => {
               src={
                 data.image.startsWith('http')
                   ? data.image
-                  : `/images/${data.image.replace('./images/', '')}`
+                  : `${import.meta.env.BASE_URL}images/${data.image.replace(/^.*[\\\/]/, '')}`
               }
               alt={data.title}
               className="absolute inset-0 w-full h-full object-cover object-center z-0 rounded-[10px]"
@@ -287,7 +287,7 @@ const DetailsScreen = () => {
                           src={
                             item.image.startsWith('http')
                               ? item.image
-                              : `/images/${item.image.replace('./images/', '')}`
+                              : `${import.meta.env.BASE_URL}images/${item.image.replace(/^.*[\\\/]/, '')}`
                           }
                           alt={item.title}
                           className="w-full h-full object-cover rounded-lg shadow-sm"

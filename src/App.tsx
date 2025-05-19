@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate, useNavigate, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate, useNavigate, useLocation } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import { DockNav } from './components/ui/DockNav';
 import ProfileIcon from './components/ProfileIcon';
@@ -52,7 +52,7 @@ const App = () => {
     >
       {/* Hamburger/Close button for sidebar toggle - now outside main layout for true fixed positioning */}
       <button
-        className="fixed top-4 left-4 z-60 bg-white rounded-full shadow-lg p-2 flex items-center justify-center md:hidden transition-colors duration-300"
+        className="fixed top-4 left-4 z-60 bg-white rounded-full shadow-lg p-2 flex items-center justify-center transition-colors duration-300"
         onClick={() => setSidebarOpen((open) => !open)}
         aria-label={sidebarOpen ? 'Close sidebar' : 'Open sidebar'}
       >
@@ -77,18 +77,14 @@ const App = () => {
           </g>
         </svg>
       </button>
-      {/* Sidebar overlay for mobile, sticky for desktop */}
+      {/* Sidebar overlay for all screen sizes */}
       <div>
-        {/* Desktop: always show sidebar, Mobile: slide-in overlay */}
-        <div className={`hidden md:block sticky top-0 h-screen`}>
-          <Sidebar />
-        </div>
         {/* Overlay background, only when sidebarOpen */}
         {sidebarOpen && (
           <div className="fixed inset-0 bg-black/30 z-40" onClick={() => setSidebarOpen(false)} />
         )}
         {/* Sidebar panel: always rendered for animation, above overlay */}
-        <div className={`fixed inset-y-0 left-0 z-50 h-full w-64 bg-gray-300 p-0 shadow-xl transform transition-transform duration-300 ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} md:hidden flex flex-col`}>
+        <div className={`fixed inset-y-0 left-0 z-50 h-full w-64 bg-gray-300 p-0 shadow-xl transform transition-transform duration-300 ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} flex flex-col`}>
           <Sidebar />
         </div>
       </div>

@@ -21,14 +21,14 @@ const Sidebar = ({ onClose }: SidebarProps) => {
     <aside className="flex flex-col justify-between h-full w-64 bg-gray-300 p-6 text-black relative">
       <div>
         <div className="mb-10 flex flex-col items-center">
-          <img src="/images/logo.png" alt="Logo" className="mx-auto mb-2 w-16 h-16 object-contain" />
+          <img src="./images/logo.png" alt="Logo" className="mx-auto mb-2 w-16 h-16 object-contain" />
           <div className="text-2xl font-bold">RecsHaven</div>
         </div>
         <nav className="flex flex-col gap-4">
           {categories.map((cat) => (
             <button
               key={cat.name}
-              onClick={() => navigate(cat.path)}
+              onClick={() => { navigate(cat.path); if (onClose) onClose(); }}
               className={`text-left hover:text-violet-500 transition font-medium ${location.pathname.startsWith(cat.path) ? 'underline:none' : ''}`}
             >
               {cat.name}
@@ -38,13 +38,13 @@ const Sidebar = ({ onClose }: SidebarProps) => {
         <hr className="my-6 border-black" />
         <div className="flex flex-col gap-2">
           <button
-            onClick={() => navigate('/randomizer')}
+            onClick={() => { navigate('/randomizer'); if (onClose) onClose(); }}
             className={`text-left hover:text-violet-500 transition font-medium ${location.pathname === '/randomizer' ? 'underline:none' : ''}`}
           >
             Randomizer ✨
           </button>
           <button
-            onClick={() => navigate('/wishlist')}
+            onClick={() => { navigate('/wishlist'); if (onClose) onClose(); }}
             className={`text-left hover:text-violet-500 transition font-medium ${location.pathname === '/wishlist' ? 'underline:none' : ''}`}
           >
             Wishlist
